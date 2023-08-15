@@ -1,0 +1,39 @@
+
+.section-one{
+    background-color: #701201;
+    color: #fff;
+    padding: 25px;
+    position: relative;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.img{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    right: 60px;
+    bottom: 0px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+.dot-curcle{
+    width: 20px;
+    height: 20px;
+    background-color: #091d77;
+    border-radius: 50%;
+    position: absolute;
+    /* right: 80px; */
+    right: 285px;
+    bottom: 47px;
+    z-index: 20;
+}
+
+.mon{
+    background-color: #530086;
+}
+.mon2{
+    right: 80px;
+}

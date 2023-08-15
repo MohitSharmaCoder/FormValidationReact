@@ -1,0 +1,86 @@
+.bulb-contain {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+.bulb-box {
+    width: 20%;
+    height: 250px;
+    position: relative;
+    background-color: orange;
+}
+
+.bulb-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.bulb-box h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D2DD50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    width: 0px;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.bulb-box h4 span {
+    display: none;
+}
+
+.bulb-box:hover h4 {
+    width: 100%;
+}
+
+.bulb-box:hover h4 span {
+    display: block;
+}
+
+@media screen and (max-width: 990px) {
+    .bulb-box {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .bulb-contain {
+        justify-content: space-around;
+    }
+
+    .bulb-box {
+        width: 33.3%;
+        height: 250px;
+        position: relative;
+        background-color: orange;
+    }
+    .bulb-box h4 {
+        width: 100%;
+        background-color: #d1dd50ab;
+        border: 1px solid #33333348;
+    }
+
+    .bulb-box h4 span {
+        display: block;
+    }
+}
+@media screen and (max-width: 500px) {
+    .bulb-box {
+        width: 50%;
+        height: 250px;
+        background-color: orange;
+    }
+}
+

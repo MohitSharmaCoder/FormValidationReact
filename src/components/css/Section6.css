@@ -1,0 +1,25 @@
+.slider-show div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+}
+
+.slider-show{
+    margin: 40px 20px;
+    overflow: hidden;
+}
+
+.sl-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.sl-box img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+}

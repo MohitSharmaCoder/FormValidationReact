@@ -1,0 +1,36 @@
+.form-con{
+    padding: 50px 200px;
+    background-color: #D2DD50;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    
+}
+
+form{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .form-con{
+        padding: 40px 50px;
+    }
+    
+    form{
+        padding: 40px;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .form-con{
+        padding: 15px 30px;
+    }
+    
+    form{
+        padding: 20px;
+        width: 100%;
+    }
+}

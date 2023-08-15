@@ -1,0 +1,120 @@
+
+.main-nav {
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr 1fr 100px;
+}
+
+.main-nav .logo {
+    display: grid;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu-link {
+    grid-column: 3/4;
+}
+
+.menu-link ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.social-media {
+    grid-column: 4/5;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+.cross-b{
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .main-nav {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+    }
+
+    .logo,
+    .menu-link,
+    .menu-link ul,
+    .social-media ul {
+        height: 70px;
+    }
+
+    .social-media {
+        display: none;
+    }
+    
+    .menu-link {
+        background-color: #32315ade;
+        display: none; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        z-index: 10;
+    }
+
+    .menu-link ul {
+        top: 100px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .phone-menu{
+        display: block;
+    }
+    .menu-link ul li{
+        margin-bottom: 15px;
+    }
+    .menu-link li a{
+        color: #fff;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+    .hamburger-me{
+        display: none;
+    }
+    .cross-b{
+        position: absolute;
+        top: 50px;
+        right: 40px;
+        z-index: 200;
+        color: white;
+        font-size:30px;
+    }
+    .cross-a{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .cross-b{
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+}
